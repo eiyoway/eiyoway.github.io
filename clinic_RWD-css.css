@@ -1,0 +1,71 @@
+html, body {
+    position: relative;
+    height: 100%;    
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;    
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6{
+      margin: 0;
+}
+#about_clinic{
+    text-align: center;
+    padding: 50px 0;
+}
+#about_clinic .clinic_box{
+    padding: 30px 0;
+}
+#about_clinic.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#about_clinic .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin: auto;
+}
+#about_clinic img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#about_clinic #hour_intro td{
+    line-height: 109px;
+}
+#about_clinic .col-lg-6{
+    padding: 0 35px;
+}
+#about_clinic .col-12{
+    padding: 0 55px;
+}
+#about_clinic #hour_intro .table-responsive{
+    overflow-y: hidden;
+}
+.mg-t-30{
+    margin: 30px 0;
+}
