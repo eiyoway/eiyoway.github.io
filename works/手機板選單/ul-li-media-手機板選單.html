@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <style>
+        
+body{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container #logo img{
+    display: block;
+    width: 60px;
+    border-radius: 30px;
+    margin: 9px 10px;
+}
+
+header .container #headernav .Hnavbars{
+    display: flex;
+    justify-content: 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header .container #headernav .Hnavbars .bar{
+    display: block;
+}
+header .container #headernav .Hnavbars .bar a{
+    color: rgb(224, 165, 54);
+    display: block;
+    padding: 30px;
+    text-decoration: unset;
+}
+header .container #headernav .Hnavbars .bar a:hover{
+    background-color: rgba(253, 252, 252, 0.815);
+    transition: 0.3s;
+}
+#mobile_menu_btn{
+        display: none;
+    } 
+
+@media (max-width: 700px){
+    header .container #headernav{
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 69px;
+    }
+    header .container #headernav.active{
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 69px;
+    }
+    header .container #headernav .Hnavbars{
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    header .container #headernav .Hnavbars .bar{
+        
+        text-align: center;
+    }
+    header .container #headernav .Hnavbars .bar a{
+        width: 100vw;
+        padding: 30px 0;    
+    }
+    header .container #headernav .Hnavbars .bar a:hover{
+        background-color: rgba(253, 252, 252, 0.815);
+        transition: 0.3s;        
+    }
+    #mobile_menu_btn{
+        display: block;
+    }  
+    #mobile_menu_btn i{
+        display: block;
+        font-size: 30px;
+        color: rgb(224, 165, 54);
+        line-height: 30px;
+        padding: 5px 10px;
+        margin:15px 30px 0 0;
+        border: 1px solid rgb(224, 165, 54);
+        border-radius: 10px;
+    }
+    
+
+
+
+
+
+}
+
+
+#sec1{
+    background-color: rgb(240, 189, 113);
+}
+#sec2{
+        background-color: pink;
+}
+#sec3{
+    background-color: rgb(118, 201, 149);
+}
+#sec4{
+    background-color:rgb(130, 141, 240);
+}
+#footernav{
+    display: block;    
+}
+footer #footernav #footernavlist{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;      
+}
+footer #footernav .footernavbar{
+    margin-right: 35px;    
+}
+footer #footernav .footernavbar>ul{
+    list-style: none;
+    padding: 0;
+}
+footer{
+    background-color: black;
+    color: rgb(240, 189, 113);
+    padding: 50px;
+}
+#footercopyright{
+    display: block;
+    text-align: center;
+}
+#footerhr{
+    margin: 20px auto;
+} 
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <a href="https://supercell.com/en/games/brawlstars/"><img src="https://p2.bahamut.com.tw/B/ACG/c/05/0000099705.PNG" alt="荒野亂鬥" title="brawlstars"></a>
+            
+            </div>
+            <div id="headernav" class="">
+                <ul class="Hnavbars">
+                    <li class="bar">
+                        <a href="">Link1</a>
+                    </li>
+                    <li class="bar">
+                        <a href="">Link2</a>
+                    </li>
+                    <li class="bar">
+                        <a href="">Link3</a>
+                    </li>
+                    <li class="bar">
+                        <a href="">Link4</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mobile_menu_btn">
+                <i id="mobile_menu_mark" class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <section id="sec1">
+        <div id="content1" class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur suscipit impedit tempore minima reiciendis laudantium hic sint iusto nemo, dignissimos tenetur natus nostrum alias nobis fugiat quisquam consequatur reprehenderit? Deleniti asperiores, rerum, natus culpa tenetur exercitationem in velit debitis, saepe nihil dolore aut animi sequi perferendis laboriosam minima sapiente similique aliquam. Quidem similique obcaecati unde, suscipit magni ad beatae ducimus commodi at odio. Repellendus a ut, expedita doloribus ex id nobis harum atque repellat temporibus soluta corporis, laborum fugiat nostrum voluptatem! Tenetur suscipit iure laboriosam placeat reiciendis, veniam doloribus porro accusamus facere illum at animi quasi quod expedita reprehenderit, quia tempore ipsam saepe. Quo aspernatur quae commodi recusandae est dolorum deleniti voluptatem nihil nam temporibus! Optio dignissimos voluptas doloremque inventore praesentium reprehenderit, atque nihil itaque aspernatur provident dolor id! Similique cupiditate ipsa natus atque animi dolorum provident sint quam quisquam fugiat, tempora unde esse doloribus ut. Nam quod impedit exercitationem.
+        </div>
+    </section>
+    <section id="sec2">
+        <div id="content2" class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda labore, animi nam quasi, architecto molestiae dolore placeat vel expedita laboriosam perferendis eos nobis ullam possimus magnam, doloribus sapiente qui dolorum voluptate natus quaerat! Corporis nisi itaque veritatis sed delectus eaque, officiis voluptatibus, blanditiis ad nobis, adipisci quae numquam dolore veniam tenetur explicabo doloribus inventore quibusdam. Molestiae iste cum quasi aperiam! Non ut dolorum ab natus nostrum error facere praesentium quas! Totam quis, labore ullam consectetur amet sint velit expedita aut eligendi aspernatur corporis repellendus itaque reiciendis nemo animi eius iure commodi earum aliquam modi, alias assumenda quisquam ratione. Nisi iusto perspiciatis odio nam voluptate, doloremque harum dignissimos ex facilis sequi voluptatum corporis omnis quos architecto eligendi, cumque earum sapiente dolorem deserunt deleniti, consequuntur dolor. Soluta, voluptates eum repellendus beatae illo minus placeat doloribus eos excepturi dolor assumenda unde non tempore sequi corporis magnam tenetur veniam cupiditate alias exercitationem ipsam quis?
+        </div>
+    </section>
+    <section id="sec3">
+        <div id="content3" class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti accusantium fugiat pariatur commodi modi quasi quaerat non distinctio exercitationem labore voluptatem corporis numquam repellendus a earum error quisquam omnis veniam sequi quo totam, aliquam amet asperiores! Ut, hic, repellat quaerat aperiam veniam officiis, nihil pariatur neque illum nulla vel provident eaque cupiditate iusto rerum ipsa laboriosam! Ipsam, distinctio ullam quia voluptas alias labore! Minima enim praesentium autem aliquam aliquid eaque excepturi adipisci illo ex voluptatibus? Illum vero eligendi doloremque, a, mollitia, qui nemo beatae ullam ratione quas veniam rerum error. Laboriosam quos accusamus ex magnam vero facere voluptatem laudantium deleniti doloribus a ducimus blanditiis quae, officia unde, aliquid maxime, reprehenderit nam dolorem culpa! Autem voluptatum nesciunt eos omnis magnam, debitis necessitatibus id, harum eligendi hic repellendus similique incidunt ducimus aliquid itaque consectetur quasi rerum! Cupiditate quidem nesciunt commodi reprehenderit nisi harum cum sit autem minus rerum, saepe velit libero hic!
+        </div>
+    </section>
+    <section id="sec4">
+        <div id="content4" class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus velit incidunt laboriosam itaque natus provident assumenda iure obcaecati qui, numquam aperiam nam accusamus cupiditate dolor ratione quasi id atque sint soluta sunt amet rerum necessitatibus perspiciatis. Explicabo blanditiis veniam harum ea ratione libero commodi pariatur nostrum, optio odio cumque beatae maiores facilis? Asperiores sunt ut accusamus, reiciendis ad nisi consequatur molestias aperiam laborum? Praesentium, cupiditate hic. Atque veniam eius voluptatibus, repudiandae amet ducimus, ipsam neque nobis voluptates iste aut nemo ut unde. Adipisci itaque odit quos ad odio consectetur qui accusantium corporis maxime consequuntur ut quia, officia accusamus porro! Hic.
+        </div>
+    </section>
+    <footer>
+        <div id="footernav" class="container">
+            <ul id="footernavlist">
+                <li class="footernavbar"><b>頁面一</b>
+                    <ul>
+                        <li>子頁面1</li>
+                        <li>子頁面2</li>
+                    </ul>
+                </li>
+                <li class="footernavbar"><b>頁面二</b>
+                    <ul>
+                        <li>子頁面1</li>
+                        <li>子頁面2</li>
+                    </ul>
+                </li>
+                <li class="footernavbar"><b>頁面三</b>
+                    <ul>
+                        <li>子頁面1</li>
+                        <li>子頁面2</li>
+                    </ul>
+
+                </li>
+                <li class="footernavbar"><b>頁面四</b> 
+                    <ul>
+                        <li>子頁面1</li>
+                        <li>子頁面2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <hr id="footerhr" class="container">
+        <div id="footercopyright" class="container">
+            Copyright © 2019 Mix Gang. All rights reserved
+        </div>
+    </footer>
+
+    <script>
+    var mobile_menu_btn = document.querySelector("#mobile_menu_btn i");
+    var mobile_menu_list = document.querySelector("#headernav");
+    mobile_menu_btn.onclick = function(){
+        if(mobile_menu_list.classList.contains("active")){
+            mobile_menu_list.classList.remove("active");
+
+
+        }else{
+            mobile_menu_list.classList.add("active");
+
+        }
+    }
+    </script>
+
+</body>
+</html>
+
+<!-- 
+    1.收合功能
+        ok
+
+    2.js變數命名
+        ok
+
+-->
