@@ -13,16 +13,47 @@
     <!--swiper CDN-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!--swiper CDN-->
+    <!-- drawer.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- drawer.css CDN -->
+
     <!--fontawesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <!--fontawesome CDN-->
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- google font -->
+    
     <link rel="stylesheet" href="clinic_RWD-css.css">
 
 
 
 </head>
 
-<body>
+<body class="drawer drawer--top drawer--navbarTopGutter">
+    <header class="drawer-navbar drawer-navbar--fixed" role="banner">
+        <div class="drawer-container">
+            <div class="drawer-navbar-header">
+                <a class="drawer-brand" href="#">榮華中醫診所</a>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="drawer-hamburger-icon"></span>
+                </button>
+            </div>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu ">
+                    <li><a class="drawer-menu-item" href="#about_clinic">診所簡介</a></li>
+                    <li><a class="drawer-menu-item" href="#">醫師簡介</a></li>
+                    <li><a class="drawer-menu-item" href="#">收費說明</a></li>
+                    <li><a class="drawer-menu-item" href="#">衛教資訊</a></li>
+                    <li><a class="drawer-menu-item" href="#">最新消息</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
 
@@ -32,7 +63,7 @@
             <h3>診所簡介</h3>
             <div id="envir_intro" class="clinic_box">
                 <!-- Swiper -->
-                <div class="swiper-container">
+                <div class="swiper-container container">
                     <h4>環境介紹</h4>
                     <div class="swiper-wrapper mg-t-30">
                         <div class="swiper-slide">
@@ -65,7 +96,7 @@
                     <div class="row">
                         <div id="hour_intro" class="col-12 col-lg-6">
                             <h4>門診時間</h4>
-                            <div class="table-responsive mg-t-30">
+                            <div class="table-responsive-xs mg-t-30">
                                 <table class="table table-hover">
                                     <thead>
                                         <tr>
@@ -142,16 +173,21 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                                <h6>週日及國定假日公休</h6>
                             </div>
+
                         </div>
                         <div id="position" class="col-12 col-lg-6">
                             <h4>診所位置</h4>
                             <div class="map mg-t-30">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.199580868752!2d120.68442381489106!3d24.16473238438677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de53bd4d0b%3A0xa2b5049f320cc9e6!2z5qau6I-v5Lit6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1569380288299!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.199580868752!2d120.68442381489106!3d24.16473238438677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917de53bd4d0b%3A0xa2b5049f320cc9e6!2z5qau6I-v5Lit6Yar6Ki65omA!5e0!3m2!1szh-TW!2stw!4v1569380288299!5m2!1szh-TW!2stw"
+                                    width="100%" height="450" frameborder="0" style="border:0;"
+                                    allowfullscreen=""></iframe>
                                 &emsp;
                                 <h6>地址：台中市北區榮華街177號</h6>
                                 <h6>電話：04-12345678、04-87654321</h6>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -211,6 +247,12 @@
         crossorigin="anonymous"></script>
     <!-- bootstrap JS -->
 
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
     <!-- anime JS -->
     <script src="anime.min.js"></script>
     <!-- anime JS -->
@@ -218,15 +260,11 @@
     <!-- swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <!-- swiper JS -->
+
+
     <!-- Initialize Swiper JS -->
-
-
-
-
-
-
-
-    <script>
+<!-- 環境輪播 -->
+<script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 30,
@@ -237,6 +275,37 @@
             },
         });
     </script>
+<!-- 環境輪播 -->
+
+
+<!-- navbar -->
+    <script>
+        $(document).ready(function() {
+            $('.drawer').drawer();
+        });
+        $('.drawer').drawer({
+            class: {
+            nav: 'drawer-nav',
+            toggle: 'drawer-toggle',
+            overlay: 'drawer-overlay',
+            open: 'drawer-open',
+            close: 'drawer-close',
+            dropdown: 'drawer-dropdown'
+        },
+            iscroll: {
+            // Configuring the iScroll
+            // https://github.com/cubiq/iscroll#configuring-the-iscroll
+            mouseWheel: true,
+            preventDefault: false
+        },
+            showOverlay: true
+        });
+    </script>
+<!-- navbar -->
+
+
+
+
 
 
 

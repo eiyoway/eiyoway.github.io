@@ -1,10 +1,11 @@
 html, body {
     position: relative;
-    height: 100%;    
+    height: 100%;
+    scroll-behavior: smooth;
 }
 body {
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'M PLUS Rounded 1c', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color:#000;
     margin: 0;
@@ -17,6 +18,25 @@ body {
 h1,h2,h3,h4,h5,h6{
       margin: 0;
 }
+
+
+header{
+    font-family: 'M PLUS Rounded 1c', 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+}
+
+header .drawer-menu{
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.drawer-navbar .drawer-menu li {
+    margin-left: 8%;
+}
+header{
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
+
 #about_clinic{
     text-align: center;
     padding: 50px 0;
@@ -51,11 +71,16 @@ h1,h2,h3,h4,h5,h6{
 #about_clinic img{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 218.33px;
 }
-
+#about_clinic #hour_intro .table {
+    margin-bottom: 3rem;
+}
 #about_clinic #hour_intro td{
-    line-height: 109px;
+    line-height: 85px;
+}
+#about_clinic #hour_intro .table td, .table th {
+    padding: 0.5rem;
 }
 #about_clinic .col-lg-6{
     padding: 0 35px;
@@ -68,4 +93,45 @@ h1,h2,h3,h4,h5,h6{
 }
 .mg-t-30{
     margin: 30px 0;
+    position: relative;
+}
+#about_clinic #hour_intro h6::before{
+    content: '';
+    /* background-color: wheat; */
+    background: linear-gradient(135deg, transparent 20px, wheat 0) top left,
+    linear-gradient(-135deg, transparent 0px, #1e1e1e 0) top right,
+    linear-gradient(-45deg, transparent 0px, #1e1e1e 0) bottom right,
+    linear-gradient(45deg, transparent 5px, #1e1e1e 0) bottom left;
+    position: absolute;
+    z-index: -5;
+    bottom: -10px;
+    width: 145px;
+    height: 20px;
+
+}
+
+
+
+
+
+
+
+@media(max-width:1023px){
+    header .drawer-menu{
+    display: flex;
+    flex-direction: column;
+    }
+    header .drawer-navbar-header{
+    -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+    }
+}
+@media(max-width:576px){
+    #about_clinic #hour_intro .table {
+        font-size: 12px;
+    }
+    #about_clinic #hour_intro td {
+        line-height: 60px;
+    }
+
+
 }
